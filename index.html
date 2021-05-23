@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Wars</title>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="hud-container container-left">
+      <div class="title">Health</div>
+      <progress id="health-bar" value="100" max="100"></progress>
+      <div class="powerball-container">
+        <div class="title">Powerballs:</div>
+        <div class="powerball" id="powerball-1"></div>
+        <div class="powerball" id="powerball-2"></div>
+        <div class="powerball" id="powerball-3"></div>
+      </div>
+    </div>
+    <div class="hud-container container-right">
+      <div class="hud-row">
+        <div class="hud-cell">Score:</div>
+        <div class="hud-cell" id="score">0</div>
+      </div>
+      <div class="hud-row">
+        <div class="hud-cell">Stars:</div>
+        <div class="hud-cell" id="stars">0</div>
+      </div>
+      <div class="hud-row"></div>
+    </div>
+    <div class="game-over-container" id="game-over">
+      <div class="game-over-title">Game Over</div>
+      <div class="game-over-summary">
+        <div class="hud-row">
+          <div class="hud-cell">Final Score:</div>
+          <div class="hud-cell" id="final-score">0</div>
+        </div>
+        <div class="hud-row">
+          <div class="hud-cell">Stars Collected:</div>
+          <div class="hud-cell" id="final-stars">0</div>
+        </div>
+        <div class="hud-row">
+          <div class="hud-cell">Asteroids Destroyed:</div>
+          <div class="hud-cell" id="final-asteroids">0</div>
+        </div>
+        <div class="hud-row">
+          <div class="hud-cell">Enemy Kills:</div>
+          <div class="hud-cell" id="final-enemies">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="hud-container container-bottom-left">
+      <div class="hud-row">
+        <div class="hud-cell">Move:</div>
+        <div class="hud-cell controls-button-container">
+          <div class="controls-button">W</div>
+          <div class="controls-button">A</div>
+          <div class="controls-button">S</div>
+          <div class="controls-button">D</div>
+        </div>
+      </div>
+      <div class="hud-row">
+        <div class="hud-cell">Shoot Powerballs:</div>
+        <div class="hud-cell"><div class="controls-button">Space</div></div>
+      </div>
+    </div>
+
+    <div class="hud-container container-bottom-right">
+      Made with &#10084;&#65039; by Harshita
+    </div>
+    <script src="src/main.js" type="module"></script>
+    <!-- <script src="js/three.js"></script> -->
+    <!-- <script type="module"></script> -->
+  </body>
+</html>
